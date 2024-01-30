@@ -1,0 +1,91 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(131, 208, 147);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#panale {
+    width: 80%;
+    height: 80%;
+    background-color: rgb(215, 246, 221);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#ptop {
+    display: flex;
+    align-items: center;
+    padding: 0 35%;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(35, 80, 43);
+}
+
+.elem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.elem>h4{
+    font-size: large;
+
+}
+.elem>div{
+    background-color: blanchedalmond;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0 5px;
+    color: rgb(35, 80, 43);
+}
+
+
+#pbotom{
+    width: 100%;
+    height: calc(100% - 100px);
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+#box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(35, 80, 43);
+
+}
+@media only screen and (max-width: 600px) {
+    #ptop {
+      justify-content: center;
+    }
+    .elem{
+       flex-direction: column;
+
+    }
+  
+  }
