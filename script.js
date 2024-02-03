@@ -22,7 +22,7 @@ function makebubble() {
 }
 
 function runtimer() {
-    let time = 60;
+    let time = 15;
     let timerint = setInterval(() => {
         if (time > 0) {
             time--;
@@ -49,7 +49,9 @@ document.querySelector("#pbotom").addEventListener('click', function (dets) {
     }
     document.querySelector("#scoreval").innerHTML = score;
 })
-runtimer()
 
-makebubble()
-newhit()
+document.querySelector("#startbtn").addEventListener("click", () => {
+    runtimer()
+    makebubble()
+    newhit()
+})
