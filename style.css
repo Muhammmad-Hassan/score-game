@@ -41,6 +41,7 @@ body {
     background-color: rgb(35, 80, 43);
 }
 
+
 .elem {
     display: flex;
     justify-content: center;
@@ -78,6 +79,7 @@ body {
     align-items: center;
     justify-content: center;
     overflow-y: scroll;
+    padding: 1rem;
 }
 
 #box {

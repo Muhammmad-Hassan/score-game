@@ -22,7 +22,7 @@ function makebubble() {
 }
 
 function runtimer() {
-    let time = 15;
+    let time = 10;
     let timerint = setInterval(() => {
         if (time > 0) {
             time--;
@@ -30,6 +30,7 @@ function runtimer() {
         }
         else {
             clearInterval(timerint)
+            
             document.querySelector("#pbotom").innerHTML = `<h1>Game over<h1/>`;
         }
 
