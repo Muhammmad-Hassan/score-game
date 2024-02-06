@@ -17,7 +17,6 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgb(38, 50, 56);
-    /* Dark blue-gray background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +26,6 @@ body {
     width: 80%;
     height: 80%;
     background-color: rgb(55, 71, 79);
-    /* Slightly lighter blue-gray panel */
     border-radius: 15px;
     overflow: hidden;
 }
@@ -84,12 +82,10 @@ body {
 
 .elem>div {
     background-color: rgb(0, 150, 136);
-    /* Turquoise element background */
     padding: 10px 15px;
     border-radius: 5px;
     margin: 0 5px;
     color: rgb(255, 255, 255);
-    /* White text */
 }
 
 #pbotom {
@@ -113,7 +109,6 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgb(255, 87, 34);
-    /* Vibrant orange-red box */
 }
 
 @media only screen and (max-width: 600px) {
@@ -129,7 +124,6 @@ body {
     #panale {
         width: 100%;
         height: 100%;
-        /* margin: .5rem; */
         border-radius: 0%;
     }
 
