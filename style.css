@@ -2,10 +2,9 @@
 
 * {
     box-sizing: border-box;
-    font-family: "Roboto Condensed", sans-serif;    
+    font-family: "Roboto Condensed", sans-serif;
     padding: 0;
     margin: 0;
-
 }
 
 html,
@@ -17,7 +16,8 @@ body {
 #main {
     width: 100%;
     height: 100%;
-    background-color: rgb(131, 208, 147);
+    background-color: rgb(38, 50, 56);
+    /* Dark blue-gray background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,49 +26,71 @@ body {
 #panale {
     width: 80%;
     height: 80%;
-    background-color: rgb(215, 246, 221);
+    background-color: rgb(55, 71, 79);
+    /* Slightly lighter blue-gray panel */
     border-radius: 15px;
     overflow: hidden;
 }
 
 #ptop {
     display: flex;
-    align-items: center;
-    padding: 0 35%;
-    justify-content: space-between;
     width: 100%;
     height: 100px;
-    background-color: rgb(35, 80, 43);
+    background-color: rgb(255, 193, 7);
+    align-items: center;
+    justify-content: center;
 }
 
+.leftptop{
+    width: 100%;
 
-.elem {
+}
+
+#startbtn {
+    background-color: inherit;
+    border: none;
+    background-color: rgb(233, 30, 99);
+    padding: 8px 13px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(233, 30, 99);
+    margin-right: auto;
+    font-weight: 600;
+
+    margin-left: 1rem;
+}
+#startbtn:hover {
+    background-color: inherit;
+    border: none;
+    border: 2px solid rgb(250, 30, 99);
+    padding: 8px 13px;
+    border-radius: 5px;
+    color: rgb(233, 30, 99);
+    margin-right: auto;
+    font-weight: 600;
+    opacity: .8;
+    margin-left: 1rem;
+    transition: all .3s;
+    cursor: pointer;
+}
+.rightptop {
     display: flex;
     justify-content: center;
     align-items: center;
-   
-    
-}
-#startbtn{
-    background-color: inherit;
-    border: none;
-}
-.elem>h4 {
-    font-size: medium;
-    letter-spacing: .1rem;
+    width: 100%;
     text-align: center;
-    text-transform: uppercase;
 
 }
 
 .elem>div {
-    background-color: blanchedalmond;
+    background-color: rgb(0, 150, 136);
+    /* Turquoise element background */
     padding: 10px 15px;
     border-radius: 5px;
     margin: 0 5px;
-    color: rgb(35, 80, 43);
+    color: rgb(255, 255, 255);
+    /* White text */
 }
-
 
 #pbotom {
     width: 100%;
@@ -90,8 +112,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(35, 80, 43);
-
+    background-color: rgb(255, 87, 34);
+    /* Vibrant orange-red box */
 }
 
 @media only screen and (max-width: 600px) {
@@ -103,11 +125,15 @@ body {
         flex-direction: column;
         margin: 0 10px;
     }
-    #panale{
+
+    #panale {
         width: 100%;
         height: 100%;
         /* margin: .5rem; */
         border-radius: 0%;
     }
 
+    .leftptop {
+        margin-top: 1.3rem;
+    }
 }

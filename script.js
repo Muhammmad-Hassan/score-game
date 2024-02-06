@@ -1,16 +1,23 @@
 let score = 0;
 let hitrn = 0
+let flag = false;
 
 
-
+// increasing score
 function increaseVale() {
     score += 10;
+
+
 }
+
+// genratinng new number for hit
+
 function newhit() {
     hitrn = Math.floor(Math.random() * 10)
     document.querySelector("#hitval").textContent = hitrn;
 }
 
+// making bubble
 function makebubble() {
     let box = "";
     for (let i = 1; i < 120; i++) {
@@ -21,6 +28,7 @@ function makebubble() {
 
 }
 
+// giving time to the game
 function runtimer() {
     let time = 10;
     let timerint = setInterval(() => {
@@ -30,13 +38,14 @@ function runtimer() {
         }
         else {
             clearInterval(timerint)
-            
+
             document.querySelector("#pbotom").innerHTML = `<h1>Game over<h1/>`;
         }
 
     }, 1000);
 
 }
+
 
 document.querySelector("#pbotom").addEventListener('click', function (dets) {
     var clickedon = Number(dets.target.textContent)
