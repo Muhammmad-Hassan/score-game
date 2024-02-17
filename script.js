@@ -40,28 +40,32 @@ function runtimer() {
             clearInterval(timerint)
 
             document.querySelector("#pbotom").innerHTML = `<h1>Game over<h1/>`;
+
         }
 
     }, 1000);
 
 }
 
-
+// click on bubble
 document.querySelector("#pbotom").addEventListener('click', function (dets) {
     var clickedon = Number(dets.target.textContent)
     if (clickedon === hitrn) {
         increaseVale()
         newhit()
         makebubble()
+        document.querySelector("#scoreval").innerHTML = score;
     }
-    else {
 
-    }
-    document.querySelector("#scoreval").innerHTML = score;
 })
 
+
+
+// click on start btn
 document.querySelector("#startbtn").addEventListener("click", () => {
+    document.querySelector("#scoreval").innerHTML = 0;
     runtimer()
     makebubble()
     newhit()
 })
+
