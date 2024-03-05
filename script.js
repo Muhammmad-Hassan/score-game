@@ -38,6 +38,7 @@ function runtimer() {
         }
         else {
             clearInterval(timerint)
+            flag = false
 
             document.querySelector("#pbotom").innerHTML = `<h1>Game over<h1/>`;
 
@@ -63,9 +64,12 @@ document.querySelector("#pbotom").addEventListener('click', function (dets) {
 
 // click on start btn
 document.querySelector("#startbtn").addEventListener("click", () => {
+    if(!flag){
     document.querySelector("#scoreval").innerHTML = 0;
     runtimer()
     makebubble()
     newhit()
+    flag = true;
+    }
 })
 
